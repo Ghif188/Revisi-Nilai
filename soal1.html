@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <input id="myInput" type="text">
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            let text = "";
+            let huruf = document.getElementById("myInput").value;
+
+            for (let i = 0; i < huruf.length; i++) {
+                var code = huruf.charAt(i).toLowerCase();
+                switch (code) {
+                    case 'a' :
+                        text += "k";
+                        break;
+                    case 'b':
+                        text += "l";
+                        break;
+                    case 'c':
+                        text += "m";
+                        break;
+                    case 'd':
+                        text += "n";
+                        break;
+                    case 'e':
+                        text += "o";
+                        break;
+                    case 'f':
+                        text += "p";
+                        break;
+                    case 'g':
+                        text += "q";
+                        break;
+                    case 'h':
+                        text += "r";
+                        break;
+                    case 'i':
+                        text += "s";
+                        break;
+                    case 'j':
+                        text += "t";
+                        break;
+                    case 'k':
+                        text += "v";
+                        break;
+                    case 'l':
+                        text += "w";
+                        break;
+                    case 'm':
+                        text += "x";
+                        break;
+                    case 'n':
+                        text += "y";
+                        break;
+                    case 'o':
+                        text += "z";
+                        break;
+                    case 'p':
+                        text += "a";
+                        break;
+                    case 'q':
+                        text += "b";
+                        break;
+                    case 'r':
+                        text += "c";
+                        break;
+                    case 's':
+                        text += "d";
+                        break;
+                    case 't':
+                        text += "e";
+                        break;
+                    case 'u':
+                        text += "f";
+                        break;
+                    case 'v':
+                        text += "g";
+                        break;
+                    case 'w':
+                        text += "h";
+                        break;
+                    case 'x':
+                        text += "i";
+                        break;
+                    case 'y':
+                        text += "j";
+                        break;
+                    case 'z':
+                        text += "j";
+                        break;
+                    default:
+                        text += pText.charAt(i);
+                        break;
+
+                }
+                document.getElementById("demo").innerHTML = text.toUpperCase();
+            }
+        }
+    </script>
+
+</body>
+
+</html>
